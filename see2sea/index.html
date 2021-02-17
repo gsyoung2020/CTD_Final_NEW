@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>See2Sea</title>
+        <meta name="description" content="Demonstrate headings">
+        <meta name="keywords" content="html tutorial headings">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+		
+        <h1>See 2 SEA [Beta]</h1>
+        <div class="input_container">
+		<textarea id="message" name="sea" rows="4" cols="50"></textarea>
+		</div>
+		<div class="container">
+		<img src="bottle.svg">
+		</div>	
+		<button type="button" id="submit">Throw Bottle</button>
+        <h2 id="cast">What Do You Want To Cast Out To Sea? </h2>
+        <h2>Click Throw Bottle to submit your message and get a random one in return</h2>
+        <h4 id="shore">New message will appear here</h4>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>    
+<script src="firebase.js"></script>
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+ </body>
+</html>
