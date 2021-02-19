@@ -7,30 +7,47 @@ body {
   text-align: center;
   height: 100%;
 }
-
+.bottle-container {
+  width: 100%;
+}
+img.bottle{
+  display: flex;
+  align-items: center;
+  width: 580px;
+  height: 320px;
+  margin: 0 auto; 
+}
 
 #message{
-	height: 55px;
-	width: 180px;
-    border-radius: 20px;
+  align-items: center;
+  position: relative;
+  bottom: 14.5em;
+  width: 180px;
+  right: 26px;
+  resize: none;
+  border-radius: 20px;
 	background-color:#FFDD00;
 	border-color: #FFDD00;
-	resize: none;
+	resize: none
 }
 
-.input_container{
-	margin-top: 135px;
-	position: absolute;
-	margin-left: 645px;
+.bottle-container{
+  margin-bottom: -7%;
 }
 
-.container img {
- 	width:580px; 
-	height:320px; 
-/*	position:inherit;*/
+#clear{
+	display: none
+}
+.nav-bar{
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: center;
+	 
 }
 
-
+.navi{
+	margin-left: 10px;
+}
 
 .ocean { 
   height: 5%;

@@ -8,6 +8,12 @@ sea.addEventListener("click",function(){
 	location.href='see2sea/index.html'
 })
 
+var photos = document.getElementById("my_photos")
+
+photos.addEventListener("click",function(){
+    location.href='photoflex/amazingpj.html'
+})
+
 var startButton = document.getElementById("start_button")
 
 startButton.addEventListener("click", function myFunction(){

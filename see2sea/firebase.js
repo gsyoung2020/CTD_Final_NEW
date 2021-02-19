@@ -47,11 +47,20 @@ db.collection("ocean").get().then((querySnapshot) => {
     });
 var stringRand = Math.floor(Math.random() * breakaprt.length)
 console.log(breakaprt[stringRand])	
-document.getElementById("message").value=""
-var textChange = document.getElementById("shore");
-textChange.innerHTML = `<h4 id="shore"> ${breakaprt[stringRand]}</h4>`
+document.getElementById("message").value= breakaprt[stringRand]
+//var textChange = document.getElementById("shore");
+//textChange.innerHTML = `<h4 id="shore"> ${breakaprt[stringRand]}</h4>`
 var casted = document.getElementById("cast");
 casted.innerHTML = `<h2 id="cast"> You've recived a bottle </h2>`
+document.getElementById("submit").style.display = "none"
+document.getElementById("clear").style.display = "inline-block"
 });
 };
+})
+
+document.getElementById("clear").addEventListener("click", function(){
+	document.getElementById("message").value=""
+	document.getElementById("submit").style.display =  "inline-block"
+document.getElementById("clear").style.display = "none"
+	
 })
